@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanwhalife</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <h1><a href="#none"><img src="images/img_site_logo.png" alt="logo"></a></h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#none">회사소개</a>
+                        <div class="sub_menu">
+                            <a href="#none">회사개요</a>
+                            <a href="#none">CEO인사말</a>
+                            <a href="#none">CI</a>
+                            <a href="#none">연혁</a>
+                            <a href="#none">경영공시</a>
+                            <a href="#none">그룹소개</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#none">상품소개</a>
+                        <div class="sub_menu">
+                            <a href="#none">생명보험</a>
+                            <a href="#none">손해보험</a>
+                            <a href="#none">제휴사</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#none">인재채용</a>
+                        <div class="sub_menu">
+                            <a href="#none">인재상</a>
+                            <a href="#none">Financial Planner</a>
+                            <a href="#none">FD 지원/등록</a>
+                            <a href="#none">채용공고</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#none">고객지원</a>
+                        <div class="sub_menu">
+                            <a href="#none">지점안내</a>
+                            <a href="#none">FAQ</a>
+                            <a href="#none">Contact Us</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#none">홍보센터</a>
+                        <div class="sub_menu">
+                            <a href="#none">NEWS</a>
+                            <a href="#none">공지사항</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="etc_menu">
+                <div class="near">
+                    <div class="near_title">
+                        <a href="#none">가까운 지점찾기</a>
+                        <img src="images/img_btn_footer.png" alt="">
+                    </div>
+                    <div class="hidden">
+                        <p>가까운 지점찾기</p>
+                        <div class="hidden_cont">
+                            <ul>
+                                <li>
+                                    <select id="sido" class="select" title="시/도 선택">
+                                        <option value="시/도">시/도</option>
+                                        <option value="서울" selected>서울</option>
+                                        <option value="경기">경기</option>
+                                        <option value="인천">인천</option>
+                                        <option value="부산">부산</option>
+                                        <option value="대전">대전</option>
+                                        <option value="대구">대구</option>
+                                        <option value="울산">울산</option>
+                                        <option value="세종">세종</option>
+                                        <option value="광주">광주</option>
+                                        <option value="강원">강원</option>
+                                        <option value="충북">충북</option>
+                                        <option value="충남">충남</option>
+                                        <option value="경북">경북</option>
+                                        <option value="경남">경남</option>
+                                        <option value="전북">전북</option>
+                                        <option value="전남">전남</option>
+                                        <option value="제주">제주</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <select id="gungu" class="select" title="시/군/구 선택">
+                                        <option value="시/군/구">시/군/구</option>
+                                        <option value="강남구">강남구</option>
+                                        <option value="강동구">강동구</option>
+                                        <option value="강북구">강북구</option>
+                                        <option value="강서구">강서구</option>
+                                        <option value="관악구">관악구</option>
+                                        <option value="구로구">구로구</option>
+                                        <option value="노원구">노원구</option>
+                                        <option value="동대문구">동대문구</option>
+                                        <option value="동작구">동작구</option>
+                                        <option value="마포구">마포구</option>
+                                        <option value="서초구">서초구</option>
+                                        <option value="송파구">송파구</option>
+                                        <option value="은평구">은평구</option>
+                                        <option value="종로구">종로구</option>
+                                        <option value="중구">중구</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <input type="text" placeholder="상세주소 또는 지점명 검색">
+                                </li>
+                            </ul>
+                            <button>검색하기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="all_button">
+                    <img src="images/img_allmenu.png" alt="all_button">
+                    <div class="all_menu">
+                        <div class="all_menu_header">
+                            <h1><img src="images/img_foot_logo.png" alt="logo"></h1>
+                            <span><img src="images/img_allmenu_close.png" alt="all_menu_close"></span>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#none">회사소개</a>
+                                <div class="sub_menu">
+                                    <a href="#none">회사개요</a>
+                                    <a href="#none">CEO인사말</a>
+                                    <a href="#none">CI</a>
+                                    <a href="#none">연혁</a>
+                                    <a href="#none">경영공시</a>
+                                    <a href="#none">그룹소개</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#none">상품소개</a>
+                                <div class="sub_menu">
+                                    <a href="#none">생명보험</a>
+                                    <a href="#none">손해보험</a>
+                                    <a href="#none">제휴사</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#none">인재채용</a>
+                                <div class="sub_menu">
+                                    <a href="#none">인재상</a>
+                                    <a href="#none">Financial Planner</a>
+                                    <a href="#none">FD 지원/등록</a>
+                                    <a href="#none">채용공고</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#none">고객지원</a>
+                                <div class="sub_menu">
+                                    <a href="#none">지점안내</a>
+                                    <a href="#none">FAQ</a>
+                                    <a href="#none">Contact Us</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#none">홍보센터</a>
+                                <div class="sub_menu">
+                                    <a href="#none">NEWS</a>
+                                    <a href="#none">공지사항</a>
+                                </div>
+                            </li>
+                            <hr>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="nav_bg"></p>
+        </header>
+        <hr>
+        <section id="slide">
+            <div class="main_slide">
+                <div class="slick_slide">
+                    <a href="#none" class="slide01"><img src="images/slide(1).jpg" alt="slide(1)"></a>
+                    <a href="#none" class="slide02"><img src="images/slide(2).png" alt="slide(2)"></a>
+                </div>
+                <ul class="page">
+                    <li class="paging01 page_active">1/2</li>
+                    <li class="paging02">2/2</li>
+                </ul>
+            </div>
+            <div class="img_scroll_txt">
+                <img src="images/img_scoll_txt.png" alt="scroll_txt">
+            </div>
+            <div class="toggle_div">
+                <div class="toggle_wrap">
+                    <div class="toggle_box">
+                        <h3>생명보험</h3>
+                        <p>고객 생애 전반의 보장과 금융 이벤트 준비를 위한 종합
+                            솔루션을 제공합니다.</p>
+                    </div>
+                    <div class="toggle_btn"></div>
+                    <div class="toggle_box">
+                        <h3>손해보험</h3>
+                        <p>고객의 신체, 재물 상의 손해를 대비하기 위한
+                            금융 솔루션을 제공합니다.</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="section02">
+            <div class="content01 inner">
+                <div class="title">
+                    <h1>회사소개</h1>
+                    <p><img src="images/main_font01.png" alt=""></p>
+                </div>
+                <div class="cont">
+                    <ul>
+                        <li>
+                            <img src="images/img_main_01.png" alt="">
+                            <h2>초대형 판매전문회사</h2>
+                            <p>전국 450여개 지점의 영업망과 약 2만명 FP의<br>
+                                판매조직을 보유한 국내 최대 판매전문회사입니다.
+                            </p>
+                        </li>
+                        <li>
+                            <img src="images/img_main_02.png" alt="">
+                            <h2>고객 중심의 서비스</h2>
+                            <p>500만 고객님께 더 나은 금융 서비스와 종합 솔루션을<br>
+                                제공하고, 변함없는 신뢰를 받고 있는 금융파트너<br>
+                                입니다.
+                            </p>
+                        </li>
+                        <li>
+                            <img src="images/img_main_03.png" alt="">
+                            <h2>도전과 혁신의 문화</h2>
+                            <p>1946년 우리나라 최초로 생명보험을 시작한<br>
+                                <img src="images/hanwhalife_16pt_62.png" alt="16pt">
+                                의 물적분할로 출범하여, 현장 중심 사고와<br>
+                                유연한 조직 문화로 끊임없이 도전하고 혁신하는<br>
+                                기업입니다.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content02 inner">
+                <div class="title">
+                    <h1>홍보센터</h1>
+                    <p>항상 고객과 소통하며 금융의 새 역사를 써나가겠습니다.</p>
+                </div>
+                <div class="cont">
+                    <ul>
+                        <li>
+                            <p class="date">2021-04-16</p>
+                            <h3>브랜드평판 1위 한화생명금융서비스</h3>
+                            <p class="desc">독립보험대리점(GA) 브랜드평판 4월 빅데이터 1위<br>
+                                한화생명금융서비스</p>
+                            <p class="detail">View Detail</p>
+                        </li>
+                        <li>
+                            <p class="date">2021-04-01</p>
+                            <h3>한화생명, 국내 최대 GA 출범...자본확충 위한 IPO 추진</h3>
+                            <p class="desc">한화생명금융서비스, 4월1일 출범식 개최 총자본
+                                6500억, FP 1만9000명 업계 1위</p>
+                            <p class="detail">View Detail</p>
+                        </li>
+                        <li>
+                            <p class="date">2021-04-01</p>
+                            <h3>한화생명, 설계사 영업조직 분사..."2025년까지 2100억 이익낼 것"</h3>
+                            <p class="desc">한화생명금융서비스 출범...GA 업계 1위 올라서 손보<br>
+                                사 9곳과 제휴...오더메이드 상품 제공도 VIP 자산관<br>
+                                리 서비스 유지, 한화생명은 영업지원</p>
+                            <p class="detail">View Detail</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="section03">
+            <div class="sec03_bg">
+                <div class="sec03_text">
+                    <h1>인재상</h1>
+                    <img src="images/main_font06.png" alt="">
+                </div>
+            </div>
+            <div class="cont inner">
+                <ul>
+                    <li>
+                        <h2>Challenge</h2>
+                        <p><img src="images/main_font_01.png" alt=""></p>
+                        <p class="main_ico"><img src="images/pr_main_ico01.png" alt=""></p>
+                        <p class="plan">기존의 틀에 안주하지 않고<br>
+                            변화와 혁신을 통해<br>
+                            최고를 추구합니다.</p>
+                    </li>
+                    <li>
+                        <h2>Dedication</h2>
+                        <p><img src="images/main_font_02.png" alt=""></p>
+                        <p class="main_ico"><img src="images/pr_main_ico02.png" alt=""></p>
+                        <p class="plan">회사, 고객, 동료와의 인연을<br>
+                            소중히 여기도 큰 목표를 위해<br>
+                            혼신의 힘을 다합니다.</p>
+                    </li>
+                    <li>
+                        <h2>Integrity</h2>
+                        <p><img src="images/main_font_03.png" alt=""></p>
+                        <p class="main_ico"><img src="images/pr_main_ico03.png" alt=""></p>
+                        <p class="plan">자긍심을 바탕으로<br>
+                            원칙에 따라 바르고<br>
+                            공정하게 행동합니다.</p>
+                    </li>
+                    <hr>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section id="section04" class="inner">
+            <div>
+                <div class="left">
+                    <h3>Contact Us</h3>
+                    <p>FP 지원 관련 궁금하신 점은 담당자에 문의하여<br>
+                        자세한 안내를 받으시기 바랍니다.</p>
+                    <div class="box">
+                        <div class="box_l">
+                            <p>담당부서</p>
+                            <h5>영업추진팀</h5>
+                        </div>
+                        <div class="box_r">
+                            <p>연락처</p>
+                            <h5>01-789-5829</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <h3>채용공고</h3>
+                    <p>차세대 금융리더가 될 열정있는 인재를 기다립니다.</p>
+                    <img src="images/img_rec_ban01.png" alt="">
+                </div>
+                <hr>
+            </div>
+            <hr>
+        </section>
+        <aside>
+            <a href="#wrap"><img src="images/img_gotop.png" alt="top"></a>
+        </aside>
+    </div>
+    <script src="script/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $('nav li').mouseenter(function () {
+            $('.sub_menu, .nav_bg').stop().slideDown();
+        })
+        $('nav li').mouseleave(function () {
+            $('.sub_menu, .nav_bg').stop().slideUp();
+        })
+        $('.all_button').click(function () {
+            $('.all_menu').stop().slideToggle();
+        })
+        $('.near_title').click(function(){
+            $('.hidden').stop().slideDown();
+        })
+        $('.hidden p').click(function(){
+            $('.hidden').stop().slideUp();
+        })
+        $(document).ready(function () {
+            $('.slick_slide').bxSlider({
+                auto:true
+            });
+        });
+        $('.toggle_btn').click(function(){
+            $('.toggle_wrap').css('left','-360px');
+            $('.toggle_wrap').slideToggle();
+            $('.toggle_btn').addClass('on');
+        })
+
+    </script>
+</body>
+
+</html>
