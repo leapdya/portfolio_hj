@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <h1>
+                <div class="left">
+                    <img src="images/logo_l.png" alt="logo_left">
+                </div>
+                <a href="index.html"><img class="center" src="images/logo.png" alt="logo"></a>
+                <div class="right">
+                    <img src="images/logo_r.png" alt="logo_right">
+                </div>
+                <hr>
+            </h1>
+            <nav>
+                <div class="inner">
+                    <ul class="menu">
+                        <li><a href="#">스토어</a></li>
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">기획전</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">Q&A</a></li>
+                        <li>
+                            <input type="text" placeholder="통합검색">
+                            <div class="search">
+                                <img src="images/search.png" alt="search">
+                            </div>
+                        </li>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="content">
+                <div class="inner">
+                    <p class="join">회원가입</p>
+                    <p class="surely"><span>* </span>은 필수 입력사항입니다.</p>
+                    
+                    <form>
+                        <p class="sns">sns계정으로 간편 회원가입
+                            <a href="#"><img src="images/fb.png" alt="facebook"></a>
+                            <a href="#"><img src="images/naver.png" alt="naver"></a>
+                            <a href="#"><img src="images/kakao.png" alt="kakao"></a>
+                        </p>
+                        <ul>
+                            <li>
+                                <label for="userid">아이디<sup> *</sup></label>
+                                <input type="text" id="userid">
+                            </li>
+                            <li class="pw">
+                                <label for="password01">비밀번호<sup> *</sup></label>
+                                <span>?</span>
+                                <input type="password" id="password01">
+                            </li>
+                            <li>
+                                <label for="password02">비밀번호 확인<sup> *</sup></label>
+                                <input type="password" id="password02">
+                            </li>
+                            <li>
+                                <label for="username">이름<sup> *</sup></label>
+                                <input type="text" id="username">
+                            </li>
+                            <li class="add">
+                                <label for="address">주소</label>
+                                <input type="text" id="address">  <span><a href="">우편번호</a></span><br>
+                                <input type="text" id="address02">  기본주소<br>
+                                <input type="text" id="address03">나머지주소
+                            </li>
+                            <li>
+                                <label for="phone">휴대전화</label>
+                                <input type="text" id="phone">
+                                 -   <input type="text" id="phone02">
+                                 -   <input type="text" id="phone03">
+                            </li>
+                            <li>
+                                <label for="e-mail">이메일</label>
+                                <input type="text" id="e-mail">
+                                @ <input type="text" id="e-mail02">
+                            </li>
+                            <li class="last">
+                                <span class="name">약관동의</span>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="all" value="all">
+                                        <label for="all">전체동의</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="fourteen" value="fourteen">
+                                        <label for="fourteen">만 14세 이상입니다.<span class=green>  (필수)</span></label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="check" value="check">
+                                        <label for="check">
+                                            <span class="underline">이용약관</span>
+                                            <span class=green>  (필수)</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="personal" value="personal">
+                                        <label for="personal">
+                                            <span class="underline">개인정보수집 및 이용 동의</span>
+                                            <span class=green>  (필수)</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="mailing" value="mailing">
+                                        <label for="mailing">이벤트 알림, 프로모션 메일 및 SMS수신(선택)</label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </form>
+                    <p class=end><a href="#">회원가입 완료</a></p>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <div class="pop">
+                <p>8~16자리로 영문 소문자, 숫자, 특수문자 중 2종을 조합<br>
+                    ',",$,공백문자는 사용 불가</p>
+            </div>
+        </aside>
+        <footer>
+            <div class="inner">
+                <div class="footer">
+                    <div class="footer_logo">
+                        <img src="images/footer.png" alt="logo_footer">
+                    </div>
+                    <div class="footer_icon">
+                        <a href="#"><img src="images/instagram.png" alt="instagram_logo"></a>
+                        <a href="#"><img src="images/facebook.png" alt="facebook_logo"></a>
+                        <a href="#"><img src="images/youtube.png" alt="youtube_logo"></a>
+                    </div>
+                </div>
+                <p class="cs">고객센터 1670-0876</p>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">입점신청문의</a></li>
+                </ul>
+
+                <p>상호명:MY FAV(파브) 대표자: 유현정 이메일: myfav_myplace@naver.com 사업자등록번호: 000-12-02291 주소: 부산시 부산진구 양정동 229-29
+                </p>
+                <p>Copyright 2021. myfav, co, Ltd. All rights reserved.</p>
+            </div>
+            <a href="#wrap"><img class="top" src="images/top.png" alt="top_button"></a>
+        </footer>
+    </div>
+</body>
+
+</html>
