@@ -1,0 +1,663 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;500&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+#wrap{
+    width:100%;
+    min-width:1280px;
+}
+.inner{
+    width:1240px;
+    margin:0 auto;
+}
+.inner02{
+    width:1610px;
+    margin:0 auto;
+}
+h1,h2,h3,h4{
+    font-weight: normal;
+}
+/* 공통 부분 */
+section{
+    width:100%;
+    height:970px;
+    overflow:hidden;
+}
+section>h1{
+    font-family: 'Noto Serif JP', serif;
+    padding-top:70px;
+    text-align: center;
+    font-size:38px;
+}
+/* --------------- header 시작 --------------- */
+header{
+    background-color: rgb(60,59,59);
+    text-align: center;
+    padding: 15px 0;
+}
+nav{
+    background-color: rgb(26, 26, 26);
+    position:sticky;
+    top:0px;
+    z-index: 1000;
+}
+nav ul{
+    justify-content: space-around;
+    display: flex;
+}
+nav ul li{
+    color:white;
+}
+nav ul li.last{
+    background-color: rgb(121,122,11);
+}
+nav ul li a{
+    display: block;
+    padding:15px 20px;
+}
+nav ul li.active{
+    background-color: rgb(255,255,255);
+    color:rgb(26, 26, 26);
+}
+/* --------------- section시작 --------------- */
+/* sec1 - Banner */
+#sec1{
+    position:relative;
+}
+/* #sec1 img{
+    width:100%;
+    height:100%;
+} */
+#sec1 .banner{
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    transition:1s;
+}
+#sec1 .mobile{
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    transition:1s;
+}
+#sec1 .banner.active{
+    opacity:1;
+}
+#sec1 div{
+    width:100px;
+    height:100px;
+    background-color: rgb(121,122,11);
+    color:white;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50%;
+    position: fixed;
+    top:230px;
+    right:40px;
+    z-index: 10;
+}
+/* sec2 - Brand Story */
+#sec2{
+    background: url(../images/brand_bg.png) no-repeat;
+    /* background-size: 100% 100%; */
+}
+#sec2>p,#sec2>h1{
+    text-align: center;
+}
+#sec2 h1{
+    font-family: 'Noto Serif JP', serif;
+}
+#sec2 .p01{
+    font-size: 24px;
+    margin-top:40px;
+    margin-bottom:50px;
+}
+#sec2 .p02{
+    display: none;
+}
+#sec2 .group{
+    display: flex;
+    justify-content: space-between;
+}
+#sec2 .brand{
+    position:relative;
+    overflow: hidden;
+    color:white;
+}
+#sec2 .brand h1{
+    position:absolute;
+    bottom:65px;
+    left:50px;
+    font-size:28px;
+}
+#sec2 .brand p{
+    position:absolute;
+    bottom:-35px;
+    left:50px;
+    font-size:18px;
+    font-weight: 200;
+    transition:.5s;
+}
+#sec2 .brand.story01:hover p,
+#sec2 .brand.story02:hover p,
+#sec2 .brand.story03:hover p{
+    bottom:35px;
+}
+
+/* sec3 - Room */
+#sec3{
+    background-color: rgb(255,255,255);
+}
+#sec3 .tab_title{
+    text-align: center;
+    margin:30px;
+}
+#sec3 .tab_title a{
+    display: inline-block;
+    margin:0 30px;
+    font-size:22px;
+    padding-bottom:5px;
+}
+#sec3 .tab_title a.active{
+    border-bottom:2px solid rgb(26, 26, 26);
+}
+#sec3 .tab_text{
+    text-align: center;
+    margin-bottom:30px;
+    font-weight: 300;
+}
+#sec3 .tab_text .room_name{
+    font-size: 20px;
+    margin-bottom:10px;
+}
+/* tab_content */
+#sec3 .tab_content{
+    position:relative;
+}
+#sec3 .tab_content .room .tab_image{
+    position: relative;
+    width:813px;
+    overflow: hidden;
+}
+#sec3 .tab_content .room .tab_image a{
+    position:absolute;
+    opacity:0;
+    left:100px;
+    transition:1s;
+}
+#sec3 .tab_content .room .tab_image a.active{
+    opacity:1;
+    left:0;
+}
+#sec3 .tab_content .room{
+    display: flex;
+    justify-content: space-between;
+    position:absolute;
+    opacity:0;
+    transition:1s;
+}
+#sec3 .tab_text div{
+    display: none;
+}
+#sec3 .tab_content .room.active{
+    opacity:1;
+}
+#sec3 .tab_text div.active{
+    display: block;
+}
+/* tab_txt(객실정보) */
+#sec3 .room .tab_txt{
+    padding:10px 0;
+    margin-left:50px;
+    font-size:17px;
+}
+#sec3 .room .tab_txt p{
+    margin-bottom:10px;
+}
+#sec3 .room .tab_txt p.lend{
+    margin-bottom:0px;
+}
+#sec3 .room .tab_txt p.lend02{
+    display: inline-block;
+    margin-left:125px;
+}
+#sec3 .room .tab_txt .info{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top:20px;
+}
+#sec3 .room .tab_txt .room_price{
+    margin-top:0px;
+}
+#sec3 .room .tab_txt span{
+    display: inline-block;
+    width:110px;
+    background-color: rgb(207,201,177);
+    margin-right:15px;
+    text-align: center;
+}
+
+/* sec4 - Special offer */
+#sec4{
+    background-color: rgb(75,79,69);
+    position:relative;
+}
+#sec4 h1{
+    color:rgb(255,255,255);
+    margin-bottom: 50px;
+}
+#sec4 .arr_left02{
+    position:absolute;
+    top:50%;
+    left:200px;
+    cursor: pointer;
+}
+#sec4 .arr_right02{
+    position:absolute;
+    top:50%;
+    right:200px;
+    cursor: pointer;
+}
+#sec4 .back{
+    background-color: rgb(255,255,255);
+    padding:40px 0;
+    position:absolute;
+    top:20%;
+    left:50%;
+    transform: translateX(-50%);
+    opacity:0;
+    transition: .5s;
+}
+#sec4 .back.active{
+    opacity:1;
+}
+#sec4 .special{
+    position: relative;
+    width:1050px;
+    margin:0 auto;
+}
+#sec4 .special>span{
+    display: inline-block;
+    background-color: rgb(121,122,11);
+    color:rgb(255,255,255);
+    font-size:23px;
+    padding:10px 20px;
+    position:absolute;
+    bottom:193px;
+    left:0;
+}
+#sec4 .package{
+    float:left;
+    padding:15px 0;
+}
+#sec4 .package .pack_name{
+    font-size:25px;
+    font-weight: 500;
+}
+#sec4 .package .pack_date,.include{
+    color:rgb(92, 92, 92);
+}
+#sec4 .package .pack_date{
+    margin-left:15px;
+}
+#sec4 .package .pack_ex{
+    font-size:21px;
+    margin-top:15px;
+}
+#sec4 .back .pack_price{
+    float:right;
+    padding:15px 0;
+    text-align: right;
+}
+#sec4 .back .pack_price span{
+    display: inline-block;
+    background-color: rgb(174,176,17);
+    color:rgb(255,255,255);
+    font-size:23px;
+    padding:5px 50px;
+    margin-top:15px;
+}
+
+/* sec5 - Dining*/
+#sec5 h2{
+    font-size:35px;
+    text-align: center;
+    margin:30px 0;
+}
+#sec5 ul{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom:40px;
+}
+#sec5 ul li{
+    background-color: rgb(75,79,69);
+    color:rgb(255,255,255);
+    padding:40px 35px;
+}
+#sec5 ul li span{
+    display: inline-block;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+#sec5 ul li span.dining_name{
+    font-size:20px;
+}
+#sec5 ul li span.dining_price{
+    float:right;
+}
+#sec5 ul li p.dining_ex{
+    font-size: 17px;
+    margin-bottom:20px;
+    font-weight: 200;
+}
+#sec5 ul li p.dining_add{
+    font-size: 15px;
+    font-weight: 100;
+    color:rgb(187, 187, 187);
+}
+#sec5>p{
+    margin-bottom:10px;
+    font-size: 17px;
+}
+#sec5>p span{
+    display: inline-block;
+    width:110px;
+    background-color: rgb(207,201,177);
+    margin-right:15px;
+    text-align: center;
+}
+/* sec6 - Gallery & 오시는길 */
+#sec6{
+    background: url(../images/gallery_bg.png) no-repeat;
+}
+#sec6 .double{
+    display: flex;
+    justify-content: space-between;
+}
+#sec6 .double .gallery h1,.map h1{
+    font-family: 'Noto Serif JP', serif;
+    padding-top:60px;
+    padding-bottom:30px;
+    text-align: center;
+    font-size:38px;
+    color:rgb(255,255,255);
+}
+#sec6 .double .gallery_img{
+    width:780px;
+    margin-right:20px;
+    background-color: rgb(188,179,145);
+    text-align: center;
+    padding:25px 0;
+}
+#sec6 .double .gallery_img .gallery01,.gallery02{
+    margin-bottom:20px;
+}
+#sec6 .double .gallery_img .gallery01,.gallery03{
+    margin-right:20px;
+}
+/* sec7 */
+#sec7{
+    background-color:rgb(50,43,46);
+    color:rgb(255,255,255);
+}
+#sec7 fieldset{
+    padding:0 250px;
+}
+#sec7 fieldset legend{
+    text-align: center;
+    font-family: 'Noto; Serif JP', serif;
+    padding:70px 15px;
+    font-size:38px;
+    color:rgb(255,255,255);
+}
+#sec7 input{
+    color:rgb(26, 26, 26);
+    width:180px;
+}
+#sec7 select{
+    width:184px;
+    height:33px;
+}
+#sec7 p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+#sec7 p.book_info{
+    font-size:18px;
+    margin-bottom:0px;
+}
+#sec7 span.book_name{
+    display:inline-block;
+    width:125px;
+}
+#sec7 .checkout,.children,.thirteen{
+    margin-left:20px;
+}
+#sec7 .adult,.children,.fourteen,.thirteen{
+    margin-right:20px;
+}
+#sec7 .book a{
+    display: inline-block;
+    background-color: rgb(121,122,11);
+    font-size:30px;
+    padding:0 30px;
+    margin:30px 270px;
+}
+/* --------------- footer시작 --------------- */
+footer{
+    background-color: rgb(60,59,59);
+    padding: 15px 0;
+}
+footer .footer_logo{
+    float:left;
+    margin-right:50px;
+}
+footer .footer_info{
+    float:left;
+}
+footer .footer_info p{
+    color:rgb(187, 187, 187);
+    font-weight: 100;
+    font-size: 14px;
+    margin-bottom:5px;
+}
+footer .footer_info p.address{
+    margin-top:15px;
+}
+footer .footer_info p.copy{
+    margin-top:15px;
+    margin-bottom:0px;
+}
+footer .sns{
+    float:right;
+    padding-top:15px;
+}
+footer .sns a{
+    padding:0 10px;
+}
+/* ------------반응형 _ 미디어쿼리 -------------  */
+@media all and (max-width:720px) {
+    #wrap {
+        width: 100%;
+        min-width: 720px;
+        /* overflow: hidden; */
+    }
+    .inner{
+        width:580px;
+        margin:0 auto;
+    }
+    section>h1{
+        font-size:35px;
+    }
+    header{
+        width:100%;
+    }
+    nav{
+        width:100%;
+        margin:0 auto;
+        font-size:14px;
+        position:sticky;
+        top:0;
+    }
+    nav ul li a{
+        padding:20px 10px;
+    }
+    #sec1 div{
+        display: none;
+    }
+    #sec1 .banner{
+        display: none;
+    }
+    #sec1 .mobile.active{
+        opacity:1;
+    }
+    #sec2{
+        background: url(../images/mobile_brand_bg.jpg) no-repeat;
+    }
+    #sec2 .p01{
+        display: none;
+    }
+    #sec2 .p02{
+        display: block;
+        margin-top:40px;
+        margin-bottom:30px;
+    }
+    #sec2 .group{
+        display: flex;
+        flex-direction: column;
+        margin-left:260px;
+    }
+    #sec2 .brand{
+        width:230px;
+        height:230px;
+        margin-bottom:10px;
+    }
+    #sec2 .brand img{
+        width:100%;
+        height:100%;
+    }
+    #sec2 .brand h1{
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    #sec2 .brand p{
+        display: none;
+    }
+    #sec3 .tab_title a{
+        margin:0 15px;
+    }
+    #sec4>img{
+        display: none;
+    }
+    #sec4 .back{
+        padding:40px 20px;
+    }
+    #sec4 .back .special img{
+        width:580px;
+        margin-bottom:15px;
+    }
+    #sec4 .special{
+        width:580px;
+    }
+    #sec4 .special>span{
+        bottom:365px;
+    }
+    #sec5{
+        height:1750px;
+    }
+    #sec5 h2{
+        font-size:26px;
+        margin:10px 0;
+    }
+    #sec5 ul{
+        flex-direction: column;
+        margin-bottom:20px;
+    }
+    #sec5 ul li{
+        padding:25px 30px;
+        text-align: center;
+    }
+    #sec5 ul li span.dining_price{
+        float:none;
+        margin-left:50px;
+    }
+    #sec5>p{
+        font-size:13px;
+    }
+    #sec5>p span{
+        width:60px;
+    }
+    #sec6{
+        height:1400px;
+        background-color: rgb(75,79,69);
+        background-image: none;
+    }
+    #sec6 .double{
+        width:100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #sec6 .double .gallery_img{
+        width:600px;
+        margin:0 10px;
+        background-color: rgb(188,179,145);
+        text-align: center;
+        padding:10px 0;
+    }
+    #sec6 .double .gallery_img img{
+        width:250px;
+    }
+    #sec6 .map iframe{
+        width:600px;
+        height:500px;
+    }
+    #sec7{
+        height:900px;
+    }
+    #sec7 fieldset{
+        padding:0 10px;
+    }
+    #sec7 fieldset legend{
+        padding:70px 15px;
+        font-size:33px;
+    }
+    #sec7 input{
+        width:120px;
+    }
+    #sec7 select{
+        width:124px;
+    }
+    #sec7 p{
+        font-size:17px;
+    }
+    #sec7 p.book_info{
+        font-size:14px;
+    }
+    #sec7 .checkout,.children,.thirteen{
+        margin-left:10px;
+    }
+    #sec7 .adult,.children,.fourteen,.thirteen{
+        margin-right:10px;
+    }
+    #sec7 span.book_name{
+        width:100px;
+    }
+    #sec7 .book a{
+        display: inline;
+        font-size: 25px;
+        margin:0;
+        padding:10px 15px;
+    }
+    #sec7 .book{
+        display:inline-block;  
+        margin-top:30px;
+        margin-bottom:30px;
+        margin-left:220px;
+    }
+    footer{display: none;}
+}
